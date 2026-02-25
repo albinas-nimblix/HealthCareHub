@@ -1,8 +1,9 @@
 package nimblix.in.HealthCareHub.service;
 
-import nimblix.in.HealthCareHub.model.LabResult;
+import nimblix.in.HealthCareHub.request.LabResultRequest;
+import nimblix.in.HealthCareHub.response.LabResultResponse;
 
 public interface LabResultService {
 
-    LabResult uploadLabResult(LabResult labResult);
+    LabResultResponse uploadLabResult(LabResultRequest request);
 }

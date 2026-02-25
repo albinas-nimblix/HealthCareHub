@@ -23,4 +23,13 @@ public class LabResult {
     private String status;
 
     private LocalDateTime uploadedAt;
-}
+
+    @ManyToOne
+    @JoinColumn(name = "patient_id")
+    private Patient patient;
+
+    @ManyToOne
+    @JoinColumn(name = "doctor_id")
+    private Doctor doctor;
+
+}  // ← ONLY ONE closing bracket here
